@@ -70,7 +70,6 @@ export function ConceptNode({ concept }: ConceptNodeProps) {
         color={isSelected ? '#fbbf24' : '#ffffff'}
         anchorX="center"
         anchorY="bottom"
-        font="/fonts/Inter-Regular.woff"
         maxWidth={3}
         textAlign="center"
       >
@@ -84,7 +83,6 @@ export function ConceptNode({ concept }: ConceptNodeProps) {
         color="#94a3b8"
         anchorX="center"
         anchorY="top"
-        font="/fonts/Inter-Regular.woff"
       >
         {concept.historicalContext.yearCreated}
       </Text>

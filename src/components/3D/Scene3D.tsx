@@ -1,7 +1,7 @@
 'use client';
 
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Environment, Grid } from '@react-three/drei';
+import { OrbitControls, Grid } from '@react-three/drei';
 import { ConceptNode } from './ConceptNode';
 import { LayerPlane } from './LayerPlane';
 import { ConnectionLine } from './ConnectionLine';
@@ -32,8 +32,8 @@ export function Scene3D() {
             shadow-mapSize-height={2048}
           />
           
-          {/* Environment */}
-          <Environment preset="night" />
+          {/* Environment - simple gradient background */}
+          <color attach="background" args={['#1e293b']} />
           
           {/* Controls */}
           <OrbitControls
